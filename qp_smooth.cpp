@@ -43,32 +43,6 @@ bool QpSmooth::GenerateHessian(double dIn)
     d8_ = d7_ * d_;
     d9_ = d8_ * d_;
 
-    /*double hessian11 = w1_ * d_ * 2.0;
-    double hessian12 = w1_ * d2_ * 2.0;
-    double hessian13 = w1_ * d3_ * 2.0;
-    double hessian14 = w1_ * d4_ * 2.0;
-    double hessian15 = w1_ * d5_ * 2.0;
-    double hessian21 = w1_ * d2_ * 2.0;
-    double hessian22 = (w1_ * 4.0 / 3.0 * d3_ + w2_ * 4.0 * d_) * 2.0;
-    double hessian23 = (w1_ * 6.0 / 4.0 * d4_ + w2_ * 6.0 * d2_) * 2.0;
-    double hessian24 = (w1_ * 8.0 / 5.0 * d5_ + w2_ * 8.0 * d3_) * 2.0;
-    double hessian25 = (w1_ * 10.0 / 6.0 * d6_ + w2_ * 10 * d4_) * 2.0;
-    double hessian31 = w1_ * d3_ * 2.0;
-    double hessian32 = (w1_ * 6.0 / 4.0 * d4_ + w2_ * 6.0 * d2_) * 2.0;
-    double hessian33 = (w1_ * 9.0 / 5.0 * d5_ + w2_ * 12.0 * d3_) * 2.0;
-    double hessian34 = (w1_ * 2.0 * d6_ + w2_ * 18.0 * d4_) * 2.0;
-    double hessian35 = (w1_ * 15.0 / 7.0 * d7_ + w2_ * 24.0 * d5_) * 2.0;
-    double hessian41 = w1_ * d4_ * 2.0;
-    double hessian42 = (w1_ * 8.0 / 5.0 * d5_ + w2_ * 8.0 * d3_) * 2.0;
-    double hessian43 = (w1_ * 2.0 * d6_ + w2_ * 18.0 * d4_) * 2.0;
-    double hessian44 = (w1_ * 16.0 / 7.0 * d7_ + w2_ * 144.0 / 5.0 * d5_) * 2.0;
-    double hessian45 = (w1_ * 20.0 / 8.0 * d8_ + w2_ * 40.0 * d6_) * 2.0;
-    double hessian51 = w1_ * d5_ * 2.0;
-    double hessian52 = (w1_ * 10.0 / 6.0 * d6_ + w2_ * 10 * d4_) * 2.0;
-    double hessian53 = (w1_ * 15.0 / 7.0 * d7_ + w2_ * 24.0 * d5_) * 2.0;
-    double hessian54 = (w1_ * 20.0 / 8.0 * d8_ + w2_ * 40.0 * d6_) * 2.0;
-    double hessian55 = (w1_ * 25.0 / 9.0 * d9_ + w2_ + 400.0 / 7.0 * d7_) * 2.0;*/
-
     for (uint i = 0; i < knotNum_ - 1; i++) {
         hessian_.insert(6 * i + 1, 6 * i + 1) = w1_ * d_ * 2.0;
         hessian_.insert(6 * i + 1, 6 * i + 2) = w1_ * d2_ * 2.0;
