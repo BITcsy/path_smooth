@@ -1,5 +1,5 @@
 # path_smooth    
-cmakelist需要根据本地的软件环境进行修改
+cmakelist需要根据本地的软件环境进行修改    
 建模原理请见：https://blog.csdn.net/BIT_csy/article/details/122793064    
 basic_data_def.h : 基础数据结构定义    
 scenarios : 生成要考虑的场景，map + object    
